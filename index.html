@@ -6,140 +6,124 @@
     <title>SIS Alumni</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Style to make the features section responsive and centered with paragraphs side by side */
+        .features-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 60px;
+            background-color: #ffffff;
+        }
+
+        .features-container {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .feature {
+            flex: 1;
+            margin: 0 20px;
+            padding: 20px;
+        }
+
+        .feature h3 {
+            color: orange;
+            margin-bottom: 15px;
+        }
+
+        .feature p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .features-container {
+                flex-direction: column;
+            }
+
+            .feature {
+                margin-bottom: 30px;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <nav class="navbar">
-        <div class="logo">SIS Alumni</div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYkSOVeN6PgmTy4PN0fieR5d49Q_BUNpKxaQ&s" style="height: 70px; width: 70px;">
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#universities">Universities</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#features">FEATURES</a></li>
+            <li><a href="#universities">UNIVERSITIES</a></li>
+            <li><a href="#events">EVENTS</a></li>
         </ul>
-        <a href="/login_form.php" class="register">Register</a>
+        <a href="/login.php" class="register" style="margin-right: 50px;">Register</a>
     </nav>
 
-    <section class="welcome-section" id="home" section class="header" style="background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(https://asset-2.tstatic.net/wartakota/foto/bank/images/Visualisasi-desain-sekolah-Singapore-Intercultural-School-SIS.jpg); background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; margin-top: 20px; width: 100%;">
+    <section class="welcome-section" id="home" style="background-image: linear-gradient(rgba(255, 255, 255, 0.421), rgba(0, 0, 0, 0.306)), url(https://cdn-sekolah.annibuku.com/20338722/2.jpg); background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; margin-top: 20px; width: 100%;">
         <div class="badge">Welcome to the SIS Alumni Portal</div>
-        <h1 style="color: white;">Connect with Alumni, Share Memories, and Grow Together</h1>
-        <p style="color: white;">Your journey starts here. Whether you’re looking to reconnect with old classmates, share your story, or find new opportunities, the SIS Alumni Portal is your gateway to a vibrant and supportive community.</p>
+        <h1 style="color: white;">Reconnect, Share, and Grow Together</h1>
+        <p style="color: white; font-weight: 2000;">Join the SIS Alumni Portal to reconnect with peers, share your story, and explore new opportunities in a supportive community!</p>
     </section>
 
 
-    <section class="our-story-section" id="about">
-        <h2>Our Story</h2>
-        <div class="story-cards">
-            <div class="story-card">
-                <h3>Our Beginning</h3><br>
-                <p>It all started with a group of passionate alumni who wanted to stay connected and give back to the community that shaped them.</p>
-            </div>
-            <div class="story-card">
-                <h3>Our Growth</h3><br>
-                <p>Over the years, we've grown into a global network of professionals, united by shared experiences and values.</p>
-            </div>
-            <div class="story-card">
-                <h3>Our Future</h3><br>
-                <p>We're constantly evolving to meet the needs of our alumni, offering new opportunities for engagement and collaboration.</p>
-            </div>
+    <section style="padding: 40px; background-image: url('https://images.unsplash.com/photo-1558684682-97c67c8992a4'); background-size: cover; background-position: center;">
+        <h1 style="text-align: center; font-size: 40px; color: orange;">Create Your Academic Future</h1>
+        <p style="text-align: center; font-size: 20px; margin-top: 10px;">
+            Welcome to a space where academic dreams become reality! At SIS Alumni, we are committed to empowering each member of our community to reach their fullest potential. Our platform serves as a hub for knowledge sharing, resource access, and meaningful connections.
+        </p>
+        <p style="text-align: center; font-size: 20px; margin-top: 10px;">
+            Collaborate with fellow alumni and students, engage in academic discussions, and gain insights from experienced mentors. Whether you are exploring new fields of study or seeking guidance for advanced research, we provide the tools and support you need to excel. Together, let's forge a brighter academic future!
+        </p>
+    </section>
+    <section style="display: flex; height: 100vh;">
+        <img src="images/homepage.png" style="width: 50%; height: auto;">
+        <div style="width: 50%; padding: 20px; margin-top: 100px;">
+            <h1 style="color: orange; font-size: 40px;">About the SIS Alumni Platform</h1>
+            <p style="margin-top: 100px; font-size: 20px;">The SIS Alumni platform was created with a singular vision: to foster lasting connections between the generations of students who have walked through the halls of SIS schools. Our goal is to create a thriving, supportive network where alumni can reconnect, share their achievements, and offer guidance to the next wave of graduates.</p>
+            <p style="font-size: 20px;">Whether you’re just starting your professional journey or are an established leader in your field, SIS Alumni offers a space to stay engaged with your peers and give back to the community that helped shape you.</p>
         </div>
+    </section>
+
+    <!-- Updated Features Section -->
+
     <section class="features-section" id="features">
-        <div class="features-text">
-            <h3>Features of Our Portal</h3>
-            <p>Our platform offers a wide range of features designed to help you stay connected with your fellow alumni and make the most of your membership. Explore some of the key features:</p>
-            <ul>
-                <li>Search for Alumni</li>
-                <li>Join Groups and Discussions</li>
-                <li>Access Resources and Opportunities</li>
-                <li>Attend Events and Reunions</li>
-            </ul><br><br>
-        </div>
-        <div class="features-image">
-            <img src="https://www.nowjakarta.co.id/wp-content/uploads/2022/07/SIS-Group-of-Schools-Are-Entitled-Satuan-Pendidikan-Kerja-Sama.jpg" alt="Alumni Features" style="width: 85%; margin-left: 100px; margin-top: 50px;">
-        </div>
-    </section>
-  
-
-    <!-- Blog Section -->
-    <section class="blog-section" id="blog">
-        <h2>Latest Blog Posts</h2>
-        <div class="blog-posts">
-            <div class="blog-post">
-                <h3>Blog Post Title 1</h3>
-                <p>Short description of the blog post. This gives a quick overview of what the post is about.</p>
-                <a href="#">Read More</a>
+        <h1 style="text-align: center; font-size: 40px; color: orange;">How we can Help <strong style="color: rebeccapurple;">You</strong></h1>
+        <div class="features-container">
+            <div class="feature">
+                <h3>Networking Opportunities</h3>
+                <p>Connect with alumni worldwide and expand your professional network. Our platform provides tools to easily stay in touch, collaborate, and grow your connections in meaningful ways.</p>
             </div>
-            <div class="blog-post">
-                <h3>Blog Post Title 2</h3>
-                <p>Short description of the blog post. This gives a quick overview of what the post is about.</p>
-                <a href="#">Read More</a>
+            <div class="feature">
+                <h3>Career Support</h3>
+                <p>Access mentorship, job opportunities, and career advice from experienced alumni. Whether you’re just starting or seeking career transitions, the SIS community is here to support your professional journey.</p>
             </div>
-            <div class="blog-post">
-                <h3>Blog Post Title 3</h3>
-                <p>Short description of the blog post. This gives a quick overview of what the post is about.</p>
-                <a href="#">Read More</a>
+            <div class="feature">
+                <h3>Events and Meetups</h3>
+                <p>Stay updated on alumni events, reunions, and online webinars. Engage in discussions, participate in virtual conferences, or attend regional alumni gatherings organized globally.</p>
             </div>
         </div>
     </section>
 
 
-
-    <section class="universities-section" id="universities">
+    <section class="universities-section" id="universities" style="padding: 40px;">
         <h2>Where Our Alumni Are</h2>
-
-        <div class="universities-grid">
-            <div class="universities-card">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/NITT_logo.png" style="width: 60%;">
-                <h3>Akilesh Sivaraj</h3>
-                <div class="author">NIT Trichy, Electrical Engineering <span>Class of 2024</span></div>
-            </div>
-            <div class="universities-card">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/NITT_logo.png" style="width: 60%;">
-                <h3>Akilesh Sivaraj</h3>
-                <div class="author">NIT Trichy, Electrical Engineering <span>Class of 2024</span></div>
-            </div>
-            <div class="universities-card">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/NITT_logo.png" style="width: 60%;">
-                <h3>Akilesh Sivaraj</h3>
-                <div class="author">NIT Trichy, Electrical Engineering <span>Class of 2024</span></div>
-            </div>
-            <div class="universities-card">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/NITT_logo.png" style="width: 60%;">
-                <h3>Akilesh Sivaraj</h3>
-                <div class="author">NIT Trichy, Electrical Engineering <span>Class of 2024</span></div>
-            </div>
-            <div class="universities-card">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/NITT_logo.png" style="width: 60%;">
-                <h3>Akilesh Sivaraj</h3>
-                <div class="author">NIT Trichy, Electrical Engineering <span>Class of 2024</span></div>
-            </div>
+        <div class="slideshow-container" style="display: flex; overflow-x: auto; white-space: nowrap;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/NITT_logo.png" alt="NIT Trichy" style="width: 200px; margin-right: 20px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Harvard_logo.png" alt="Harvard" style="width: 200px; margin-right: 20px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/77/MIT_logo.png" alt="MIT" style="width: 200px; margin-right: 20px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Stanford_University_seal_2003.svg" alt="Stanford" style="width: 200px; margin-right: 20px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Oxford_logo.png" alt="Oxford" style="width: 200px; margin-right: 20px;">
         </div>
     </section>
 
-     <!-- Contact Us Section -->
-   <div class="contact">
-    <section class="contact-section" id="contact">
-        <h2>Contact Us</h2>
-        <p>Have questions or feedback? We’d love to hear from you. Reach out to us using the form below, and we’ll get back to you as soon as possible!</p>
-        <div class="contact-form">
-            <form action="/submit-contact" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </section>
-</div>
-</div>
 
     <div class="footer-links">
         <ul style="list-style: none; padding: 0; display: flex; gap: 20px;">
@@ -150,11 +134,9 @@
             <li><a href="contact.html" style="color: #fff; text-decoration: none;">Contact</a></li>
         </ul>
     </div>
-</div>
-<div class="footer-bottom" style="text-align: center; margin-top: 10px;">
-    <p style="margin: 0;">&copy; 2024 SIS Alumni Network. All rights reserved.</p>
-</div>
-</footer>
 
+    <div class="footer-bottom" style="text-align: center; margin-top: 10px;">
+        <p style="margin: 0;">&copy; 2024 SIS Alumni Network. All rights reserved.</p>
+    </div>
 </body>
 </html>
